@@ -8,7 +8,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
     <style>
+        #content>#section1>.slideshow {
+            border: 1px solid black;
+            width: 300%;
+            height: 100%;
+            /* margin: auto; */
+            transition: 0.5s;
+            position: relative;
+            left: 0;
+        }
 
+        #content>#section1>.slideshow>.slide {
+            /* border: 1px solid red; */
+            width: 33.3%;
+            height: 399px;
+            float: right;
+            /* transition: 0.5s; */
+            /* position: relative; */
+            /* left: 0; */
+
+        }
+
+        #content>#section1>.slideshow>.slide>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* #content>#section1>.slideshow>.fade {} */
+
+        #content>#section1>.prev {
+            /* border: 1px solid gray; */
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            color: #fff;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+            display: inline-block;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 200;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            cursor: pointer;
+
+        }
+
+        #content>#section1>.next {
+            /* border: 1px solid gray; */
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            color: #fff;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+            display: inline-block;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 200;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            cursor: pointer;
+
+        }
     </style>
 </head>
 
@@ -80,11 +142,19 @@
     </header>
     <div id="content">
         <div id="section1">
-            <div class="slideshow">
-                <div class="slide fade"></div>
-                <a class="prev" onclick="plusSlides(-1)">&gt;</a>
-                <a class="next" onclick="plusSlides(1)">&lt;</a>
+            <div id="slideshow" class="slideshow">
+                <div class="slide">
+                    <img src="/img/slide1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/img/slide3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/img/slide2.jpg">
+                </div>
             </div>
+            <a id="left" class="prev">&gt;</a>
+            <a id="right" class="next">&lt;</a>
         </div>
         <div id="section2">
             <div class="duty">
@@ -168,6 +238,30 @@
             </div>
         </div>
     </footer>
+    <script>
+        pos = 0;
+        left.onclick = function () {
+            // alert(pos)
+
+            if (pos > -200) {
+                pos = pos - 100;
+                slideshow.style.right = pos + "%";
+            }
+            else if (pos == -200) {
+                pos = 0;
+                slideshow.style.right = pos + "%";
+            }
+        }
+        right.onclick = function () {
+            if (pos == 0) {
+                pos = -300;
+                slideshow.style.left = pos + "%";
+            }
+            pos = pos + 100;
+            slideshow.style.right = pos + "%";
+        }
+
+    </script>
 </body>
 
 </html>
