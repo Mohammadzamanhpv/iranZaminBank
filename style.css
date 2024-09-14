@@ -30,14 +30,13 @@ header>#header {
     height: 78px;
     width: 1290px;
     float: right;
-
 }
 
 #panel>.portals>.logo {
     /* border: 1px solid yellow; */
     width: 165px;
     height: 70px;
-    background: url(/img/headerLogo.png) no-repeat;
+    background: url(./img/headerLogo.png) no-repeat;
     float: right;
     margin-top: 5px;
 }
@@ -61,7 +60,6 @@ header>#header {
     color: black;
     font-weight: bold;
 }
-
 
 #panel>.portals>.portal>.portItems:hover>div {
     /* top:90px; */
@@ -113,7 +111,6 @@ header>#header {
 
 #panel>.portals>.leftbutton>.leftbuttons:hover {
     background: #c41165;
-
 }
 
 #panel>.portals>.leftbutton>.it4:hover {
@@ -128,11 +125,10 @@ header>#header {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    background: #E22B80;
+    background: #e22b80;
     text-align: center;
     line-height: 47px;
     cursor: pointer;
-
 }
 
 #header>#menu {
@@ -149,7 +145,6 @@ header>#header {
     width: 800px;
     height: 70px;
     margin-right: 150px;
-
 }
 
 #menu>.boxMenu>.menuItems {
@@ -161,6 +156,11 @@ header>#header {
     margin: 20px 50px;
     list-style-type: none;
     font-size: 18px;
+    /* z-index: 1px; */
+}
+
+#menu>.boxMenu>.menuItems>div {
+    z-index: 1;
 }
 
 #menu>.boxMenu>.menuItems>div>li {
@@ -169,7 +169,6 @@ header>#header {
 }
 
 #menu>.boxMenu>.it1 {
-
     padding: 5px 10px 5px;
 }
 
@@ -180,7 +179,6 @@ header>#header {
 #menu>.boxMenu>.it3 {
     padding: 5px 10px 5px;
 }
-
 
 #menu>.boxMenu>.it1:hover {
     background-color: #361447;
@@ -200,7 +198,6 @@ header>#header {
     border-radius: 5px 5px 0 0;
 }
 
-
 #menu>.boxMenu>.menuItems>div {
     border: 1px solid black;
     width: 800px;
@@ -213,7 +210,6 @@ header>#header {
     right: 220px;
     transition: 0.5s;
     padding: 10px 30px;
-
 }
 
 #menu>.boxMenu>.it3>div {
@@ -237,15 +233,13 @@ header>#header {
 
 /* section 1 */
 #content>#section1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1440px;
     height: 400px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
 }
-
-
 
 /* section2  */
 #content>#section2 {
@@ -288,7 +282,7 @@ header>#header {
     text-align: center;
     color: #1571c4;
     font-size: 18px;
-    background: url(/img/cards.png)no-repeat;
+    background: url(./img/cards.png) no-repeat;
     background-size: 100px;
     background-position: 50% top;
     line-height: 260px;
@@ -300,7 +294,7 @@ header>#header {
     width: 1440px;
     height: 90px;
     background: #65015f;
-    margin: auto
+    margin: auto;
 }
 
 #sponser>.sponserpic {
@@ -308,7 +302,7 @@ header>#header {
     width: 200px;
     height: 80px;
     float: right;
-    background: url(/img/faraz.png) no-repeat;
+    background: url(./img/faraz.png) no-repeat;
     background-size: 120px;
     background-position: 50%;
     /* margin: auto; */
@@ -322,7 +316,6 @@ header>#header {
     width: 1440px;
     height: 500px;
 }
-
 
 #content>#section3>#bankduty {
     /* border: 1px solid green; */
@@ -363,7 +356,7 @@ header>#header {
     text-align: center;
     color: #fff;
     font-size: 18px;
-    background: url(/img/cardban.png)no-repeat;
+    background: url(./img/cardban.png) no-repeat;
     background-size: 140px;
     background-position: 50% 20%;
     line-height: 400px;
@@ -387,7 +380,7 @@ header>#header {
     margin-right: auto;
     width: 180px;
     height: 65px;
-    background: url(/img/social.png) no-repeat;
+    background: url(./img/social.png) no-repeat;
     background-size: 50px;
 }
 
@@ -443,7 +436,7 @@ header>#header {
     margin-right: auto;
     width: 180px;
     height: 65px;
-    background: url(/img/social.png) no-repeat;
+    background: url(./img/social.png) no-repeat;
     background-size: 60px;
 }
 
@@ -468,7 +461,6 @@ header>#header {
 .foottext>.text1 {
     font-size: 25px;
     font-weight: bolder;
-
 }
 
 .foottext>.text2 {
@@ -478,7 +470,6 @@ header>#header {
 
 .foottext>.text4 {
     padding-bottom: 10px;
-
 }
 
 /* copyright section */
@@ -502,7 +493,7 @@ header>#header {
     /* border: 1px solid black; */
     width: 50px;
     height: 45px;
-    background: url(/img/copyright.png) no-repeat;
+    background: url(./img/copyright.png) no-repeat;
     float: right;
     margin: 2px 0 0 4px;
 }
